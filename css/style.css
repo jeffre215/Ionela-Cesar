@@ -1,0 +1,197 @@
+.body{
+    background-color: #c4a99d;
+}
+
+main {
+    margin-top: 200px;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+@media (max-width: 600px) {
+    .hero-section {
+        height: 100vh;
+    }
+
+    .bg-video {
+        object-position: center center;
+    }
+}
+
+.navbar.bg-body-tertiary {
+    background-color: transparent !important;
+    box-shadow: none;
+    transition: background-color 0.3s ease;
+    z-index: 1050;
+  }
+
+  .navbar {
+    transition: top 0.5s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+  }
+
+/* Logo visible por defecto */
+.navbar-logo {
+  max-width: 500px;
+  width: 300px;
+  height: auto;
+  position: absolute;
+  margin-top: 140px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+  z-index: 1;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    width: 180px;
+    margin-top: 100px;
+  }
+}
+
+/* Ocultar logo al hacer scroll */
+.navbar-logo.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+/*Transiciones suaves*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*Cuenta regresiva*/
+#countdown-section {
+  background-color: #fff;
+  color: #c4a99d;
+  font-family: 'Poppins', sans-serif;
+}
+
+#countdown div {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #c4a99d;
+  color: white;
+  min-width: 80px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/*Animación de secciones*/
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*tarjetas de lugares*/
+#lugares .card {
+  transition: transform 0.3s ease;
+}
+
+#lugares .card:hover {
+  transform: scale(1.05);
+}
+
+.row img{
+    width: 8rem;
+    max-width: 150px;
+    height: auto;
+    align-self: center;
+}
+
+.row h5 {
+    text-align: center;
+}
+
+.row p{
+    text-align: center;
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/*Regalos*/
+#regalos .btn,
+#confirmar-asistencia .btn {
+  transition: transform 0.3s ease;
+  background-color: #e7cdc2;
+  border-color: #e7cdc2;
+}
+
+#regalos .btn:hover,
+#confirmar-asistencia .btn:hover {
+  transform: scale(1.05);
+  background-color: #b89f94;
+  border-color: #c4a99d;
+}
+
+#regalos a{
+    color: #ffffff;
+    font-weight: 10px;
+}
+#regalos h2{
+    color: #c4a99d;
+    text-shadow: 0 0 1.5px rgba(0,0,0,0.3);
+    font-weight: 50px;
+}
+
+#regalos p{
+    color: #c4a99d;
+    text-shadow: 0 0 1.3px rgba(0,0,0,0.3);
+}
+
+#regalos img{
+    width: 100px;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  #regalos .btn,
+  #confirmar-asistencia .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
