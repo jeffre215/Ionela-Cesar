@@ -94,6 +94,13 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+#countdown {
+  display: flex;
+  flex-wrap: wrap; /* 👈 permite que los bloques bajen en pantallas pequeñas */
+  justify-content: center;
+  gap: 1rem;
+}
+
 #countdown div {
   padding: 20px;
   border-radius: 15px;
@@ -102,6 +109,17 @@ html {
   min-width: 80px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  flex: 1 1 150px; /* 👈 asegura que crezca/reduzca adecuadamente */
+  max-width: 160px;
+}
+
+/* Media query para pantallas muy pequeñas */
+@media (max-width: 400px) {
+  #countdown div {
+    padding: 15px;
+    font-size: 0.9rem;
+    max-width: 90px;
+  }
 }
 
 /*Animación de secciones*/
