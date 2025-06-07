@@ -109,8 +109,8 @@ html {
   min-width: 80px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  flex: 1 1 150px; /* 👈 asegura que crezca/reduzca adecuadamente */
-  max-width: 160px;
+  flex: 1 1 165px; /* 👈 asegura que crezca/reduzca adecuadamente */
+  max-width: 180px;
 }
 
 /* Media query para pantallas muy pequeñas */
