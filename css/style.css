@@ -109,7 +109,7 @@ html {
   min-width: 80px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  flex: 1 1 165px; /* 👈 asegura que crezca/reduzca adecuadamente */
+  flex: 1 1 175px; /* 👈 asegura que crezca/reduzca adecuadamente */
   max-width: 180px;
 }
 
@@ -118,7 +118,7 @@ html {
   #countdown div {
     padding: 15px;
     font-size: 0.9rem;
-    max-width: 90px;
+    max-width: 140px;
   }
 }
 
