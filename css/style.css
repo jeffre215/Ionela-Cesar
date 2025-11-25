@@ -1,5 +1,5 @@
 .body{
-    background-color: #c4a99d;
+    background-color: #DFDFDF;
 }
 
 main {
@@ -89,8 +89,8 @@ html {
 
 /*Cuenta regresiva*/
 #countdown-section {
-  background-color: #fff;
-  color: #c4a99d;
+  background-color: #DFDFDF;
+  color: #8a8888;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -104,7 +104,7 @@ html {
 #countdown div {
   padding: 20px;
   border-radius: 15px;
-  background-color: #c4a99d;
+  background-color: #7da761;
   color: white;
   min-width: 80px;
   text-align: center;
@@ -117,7 +117,7 @@ html {
 @media (max-width: 400px) {
   #countdown div {
     padding: 15px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     max-width: 150px;
   }
 }
@@ -142,6 +142,11 @@ html {
 
 #lugares .card:hover {
   transform: scale(1.05);
+}
+
+#lugares h2{
+    color: #8a8888
+    text-shadow: 0 0 1.5px rgba(0,0,0,0.5);
 }
 
 .row img{
@@ -169,29 +174,29 @@ html {
 #regalos .btn,
 #confirmar-asistencia .btn {
   transition: transform 0.3s ease;
-  background-color: #e7cdc2;
-  border-color: #e7cdc2;
+  background-color: #7da761;
+  border-color: #5d7c48;
 }
 
 #regalos .btn:hover,
 #confirmar-asistencia .btn:hover {
   transform: scale(1.05);
-  background-color: #b89f94;
-  border-color: #c4a99d;
+  background-color: #DFDFDF;
+  border-color: #DFDFDF;
 }
 
 #regalos a{
-    color: #ffffff;
+    color: #FFF;
     font-weight: 10px;
 }
 #regalos h2{
-    color: #c4a99d;
+    color: #8a8888;
     text-shadow: 0 0 1.5px rgba(0,0,0,0.3);
     font-weight: 50px;
 }
 
 #regalos p{
-    color: #c4a99d;
+    color: #8a8888;
     text-shadow: 0 0 1.3px rgba(0,0,0,0.3);
 }
 
@@ -213,3 +218,4 @@ img {
   max-width: 100%;
   height: auto;
 }
+
